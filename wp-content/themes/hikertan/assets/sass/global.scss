@@ -1,0 +1,772 @@
+@import "fonts";
+@import "compass/css3/transform";
+@import "compass/css3";
+
+//Colors
+
+
+$yellow-1: #FFC623;
+$dark-1: #202020;
+$green-1: #005C64;
+$brown-1: #773A18;
+$grey-1: #E3E3E3;
+
+
+body.disable{
+	overflow: hidden;
+}
+
+html{
+	font-family: $avenirRoman;
+	font-size: 13px;
+	color: $dark-1;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	
+}
+
+h1{
+	font-family: $avenirLight;
+	font-size: 52px;
+}
+
+h2{
+	font-family: $minionBold;
+	font-size: 42px;
+}
+
+h3{
+	font-family: $avenirMed;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+h4{
+	font-family: $avenirMed;
+	font-size: 28px;
+}
+
+h5{
+	font-family: $minionBold;
+	font-size: 28px;
+}
+
+h6{
+	font-family: $avenirBlack;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+
+p{
+	font-family: $minionReg;
+	font-size: 18px;
+	line-height: 28px;	
+	&.lead{
+		font-size: 18px;
+	}
+}
+
+ul, li{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul li{
+	margin: 30px 0;
+
+	a{
+		color: $dark-1;
+	}
+}
+
+a{
+	color: $dark-1;
+
+	&:hover{
+		text-decoration: underline;
+		color: $dark-1;
+	}
+}
+
+a.btn, button.btn{
+	
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: $dark-1;
+	color: white;
+	font-family: $avenirBlack;
+	font-weight: bold;
+	padding: 13px;
+	border: none;
+	outline: none;
+
+	&.btn-dark{
+		background-color: $dark-1;
+		color: white;
+	}
+
+	&.btn-secondary{
+		background-color: $dark-1;
+		color: white;	
+	}
+
+
+	&.btn-primary{
+		color: $dark-1;
+		background-color: $yellow-1;
+
+
+		&:hover{
+			background-color:  $yellow-1;
+			color: $dark-1;
+		}
+	}
+}
+
+
+.inner{
+	
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+//Nav
+
+header.header{
+	background-color: $dark-1;
+	height: 61px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	display: block;
+
+	.logo{
+		background: url(/wp-content/themes/hikertan/assets/img/global/logo.svg) no-repeat transparent scroll;
+		background-repeat: no-repeat;
+		width: 177px;
+		height: 32px;
+		position: absolute;
+		top: 16px;
+		left: 20px;
+	}
+
+
+	ul{
+		margin: 0 auto;
+		background-color: transparent;
+		display: block;
+		height: 61px;
+		max-width: 600px;
+		text-align: center;
+
+
+		li{
+			display: inline-block;
+			margin: 0 -4px 0 0;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			line-height: 61px;
+			a{
+				height: 100%;
+				padding: 0 40px;
+				z-index: 10;
+				position: relative;
+				font-family: $avenirBlack;
+				font-weight: bold;
+				font-size: 13px;
+				color: #ffffff;
+				display: block;
+				background-color: transparent;
+				letter-spacing: 1px;
+				text-decoration: none;
+				text-transform: uppercase;
+				@include transition(.2s all ease-in-out);
+				@include transition-delay(.1s);
+				&:hover{
+					
+					color: $dark-1;
+					@include transition(.2s all ease-in-out);
+					@include transition-delay(.1s);
+				}
+
+
+			}
+
+
+
+			&:after{
+					display: block;
+					content: "";
+					position: absolute;
+					top: 0;
+					z-index: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					background-color: $yellow-1;
+					opacity: 0;
+					@include transform(rotate(0deg)translateY(-200%)scale(2,2));
+					@include transform-origin(top, left);
+					@include transition(.2s all ease-in-out);
+					@include transition-delay(.2s);
+
+					
+			}
+
+			&.active{
+
+				&:after{
+					@include transform(rotate(0deg)translateY(-118px)scale(2,2));
+					opacity: 1;
+				}
+
+				a{
+
+				}
+			}
+
+			&:hover{
+				&:after{
+					@include transform(rotate(0deg)translateY(0%)scale(1,1));
+					
+					@include transition(.1s all ease-in-out);
+					opacity: 1;
+
+				}
+			}
+		}
+	}
+
+
+	.shopping-cart{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 61px;
+		cursor: pointer;
+		width: 120px;
+		overflow: hidden;
+		
+		svg{
+			position: absolute;
+			right: 10px;
+			top: 14px;
+			width: 21px;
+			height: 28px;
+		}
+		svg g{
+			fill: $yellow-1;
+		}
+
+		.wps-btn-cart{
+			height: 100%;
+			width: 100%;
+		}
+
+		.wps-cart-counter{
+			font-size: 13px;
+			font-family: $avenirBlack;
+			letter-spacing: 1px;
+			    height: 100%;
+			    line-height: 13px;
+			  	max-width: 100%;
+			  	max-height: 100%;
+			  	font-weight: bold;
+			   margin-top: 1px;
+			    padding: 0;
+			  transform: translateY(0)!important;
+			  opacity: 1!important;
+			  transition: 0 all ease-in-out;
+			  top: 24px;
+			    width: 100%;
+			    padding-right: 96px;
+			  
+			    text-align: right;
+			    background-color: transparent;
+			    border-radius: 0px;		
+		}
+
+		@media screen and (max-width: 600px){
+			.wps-cart-counter{
+				
+			}
+		}
+
+
+
+		h6{
+			color: white;
+			text-align: right;
+			padding-right: 23px;
+			background: url(/wp-content/themes/hikertan/assets/img/global/shopping-cart-icn.svg) no-repeat transparent scroll;
+			background-position: 53px 18px;
+			position: absolute;
+			top: 25px;
+			right: 18px;
+			font-weight: bold;
+		}
+
+		&:after{
+			display: block;
+			content: "";
+			position: absolute;
+			top: 0;
+			z-index: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(255,255,255,.1);
+			opacity: 0;
+			@include transform(rotate(0deg)translateY(200%)scale(2,2));
+			@include transform-origin(top, left);
+			@include transition-delay(.2s);
+			@include transition(.2s all ease-in-out);
+		}
+
+		&:hover{
+			&:after{
+				@include transform(rotate(0deg)translateY(0%)scale(1,1));
+				
+				@include transition(.1s all ease-in-out);
+				opacity: 1;
+
+			}
+		}
+	}
+
+	#menu-btn{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 880px){
+	header.header{
+		ul{
+			display: none;
+			max-width: 100%;
+
+			&.open{
+				display:block;
+				position: fixed;
+				width: 100%;
+				top: 61px;
+				background-color: $dark-1;
+				height: 100%;
+
+				li{
+					display: block;
+					width: 100%;
+					height: 61px;
+					line-height: 61px;
+					text-align: left;
+					a{
+
+					}
+				}
+			}
+		}
+
+		.logo{
+			@include transform(scale(.7,.7)translateX(20px));
+			@include transform-origin(center left);
+			
+		}
+
+		#menu-btn{
+		display: block;
+		color: white;
+		height: 61px;
+		background-color: transparent;
+		border: none;
+		width: 61px;
+		cursor: pointer;
+		z-index: 90;
+
+			.icon{
+				    display: block;
+				    width: 20px;
+				    height: 20px;
+				    color: white;
+				    position: absolute;
+				    left: 22px;
+				    top: 20px;
+				    background: url(/wp-content/themes/hikertan/assets/img/global/bars-solid.svg) no-repeat transparent scroll;
+				    background-size: 20px auto;
+				    background-position: center center;
+
+			}
+
+			&.open{
+				.icon{
+					background: url(/wp-content/themes/hikertan/assets/img/global/times-solid.svg) no-repeat transparent scroll;
+					background-size: 15px auto;
+					background-position: center center;
+				}
+				
+			}
+		}
+
+
+
+		
+
+
+	}
+}
+
+
+body.post-type-archive-kits{
+	header.header ul li:nth-child(1):after{
+		@include transform(rotate(0deg)translateY(-118px)scale(2,2));
+		opacity: 1;
+
+
+	}
+
+	header.header ul li:nth-child(1):hover{
+		&:after{
+			@include transform(rotate(0deg)translateY(0%)scale(1,1));
+		}
+	}
+}
+
+body.post-type-archive-field_reports{
+	header.header ul li:nth-child(2):after{
+		@include transform(rotate(0deg)translateY(-118px)scale(2,2));
+		opacity: 1;
+	}
+
+	header.header ul li:nth-child(2):hover{
+		&:after{
+			@include transform(rotate(0deg)translateY(0%)scale(1,1));
+		}
+	}
+}
+
+body.page-template.shop{
+	header.header ul li:nth-child(3):after{
+		@include transform(rotate(0deg)translateY(-118px)scale(2,2));
+		opacity: 1;
+	}
+
+	header.header ul li:nth-child(3):hover{
+		&:after{
+			@include transform(rotate(0deg)translateY(0%)scale(1,1));
+		}
+	}
+}
+
+
+main{
+	padding-top: 61px;
+}
+
+@media screen and (min-width: 2040px){
+	header.header{
+		top: 0;
+		left: 0;
+		width: 180px;
+		height: 100vh;
+		.inner{
+			height: inherit;
+		}
+		ul{
+			@include transform(translateY(60px));
+			
+			li{
+				width: 100%;
+				margin-bottom: -2px;
+				&.active{
+					&:after{
+						@include transform(rotate(0deg) translateY(0%)translateX(-356px) scale(2, 2));
+					}
+				}
+			}
+
+			li a{
+				padding: 0 0 0 20px;
+				width: 100%;
+				text-align: left;
+			}
+
+			
+		}
+
+		.logo{
+			@include transform(scale(.8,.8)translateX(-20px));
+			
+			
+		}
+
+		.shopping-cart{
+			bottom: 0;
+			top: auto;
+			width: 100%;
+
+			.wps-cart-counter{
+				padding-right: 20px;
+
+				
+			}
+
+			svg{
+				right: auto;
+				left: 20px;
+				top: 15px;
+			}
+
+			h6{
+				right: 20px;
+			}
+		}
+
+		
+
+
+
+		
+
+
+	}
+
+	main{
+		padding-top: 0px;
+	}
+
+	body.post-type-archive-kits{
+		header.header ul li:nth-child(1):after{
+			@include transform(rotate(0deg)translateY(0)translateX(-356px)scale(2,2));
+			opacity: 1;
+		}
+	}
+
+	body.post-type-archive-field_reports{
+		header.header ul li:nth-child(2):after{
+			@include transform(rotate(0deg)translateY(0)translateX(-356px)scale(2,2));
+			opacity: 1;
+		}
+	}
+
+	body.page-template.shop{
+		header.header ul li:nth-child(3):after{
+			@include transform(rotate(0deg)translateY(0)translateX(-356px)scale(2,2));
+			opacity: 1;
+		}
+	}
+}
+
+
+//Footer
+#footer-logo{
+		width: 118px;
+		height: 28px;
+		background: url(/wp-content/themes/hikertan/assets/img/global/logo-footer.svg) no-repeat transparent scroll;
+		background-size: 118px 28px;
+		background-position: top left;
+		display: block;
+		margin-bottom: 10px;
+
+	}
+
+footer{
+	.container{
+		border-top: 6px solid #D8D8D8;
+		padding-top: 40px;
+	}
+	
+
+	.find-us{
+		
+		h6{
+			margin-top: 30px;
+		}
+	}
+
+	.col-sm{
+		padding-bottom: 40px;
+	}
+		
+	.social-icons{
+		display: block;
+		padding-top: 10px;
+		font-size: 20px;
+		color: $dark-1;
+		
+
+		a{
+			margin-right: 20px;
+			color: $dark-1;
+		}
+	}
+
+}
+
+
+
+.card-module{
+	display: inline-block;
+	width: 33%;
+	margin-right: -3px;
+	padding-right: 40px;
+	height: 440px;
+	padding-bottom: 40px;
+
+	.card{
+		display: table;
+		height: 100%;
+		width: 100%;
+		vertical-align: bottom;
+		background-size: cover;
+
+
+
+
+		.card-content{
+			display: table-cell;
+			width: 100%;
+			vertical-align: bottom;
+			padding: 20px;
+
+		}
+
+		h2{
+			color: white;
+			margin-bottom: 10px;
+		}
+
+		h2, a{
+			
+
+			
+			
+		}
+
+		a{
+			height: block;
+			height: auto;
+			width: 100%;
+			
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 1000px){
+	.card-module{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.card-module{
+		width: 100%;
+		padding-right: 0px;
+	}
+}
+
+.report-listing-container{
+	.container .card-module{
+		.card{
+			h2{
+				color: $dark-1;
+			}
+
+			background-size: 100% auto;
+			background-position: center -43px;
+			background-repeat: no-repeat;
+		}
+
+
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.report-listing-container{
+	.container .card-module{
+		.card{
+			
+			
+			background-position: center -13px;
+			
+			
+		}
+
+
+	}
+}
+}
+
+@media screen and (max-width: 750px){
+	.report-listing-container{
+	.container .card-module{
+		.card{
+			h2{
+				color: $dark-1;
+			}
+
+			
+			background-position: center 17px;
+			background-size: 65% auto;
+			
+		}
+
+
+	}
+}
+}
+
+
+@media screen and (max-width: 350px){
+	.report-listing-container{
+	.container .card-module{
+		.card{
+			h2{
+				color: $dark-1;
+			}
+
+			
+			background-position: center -13px;
+			background-size: 85% auto;
+			
+		}
+
+
+	}
+}
+}
+
+body.error404{
+	section{
+		padding: 140px 0 140px 00;
+		text-align: center;
+		background: url('/wp-content/themes/hikertan/assets/img/global/404-bg.png') transparent scroll no-repeat;
+		background-size: cover;
+		margin-bottom: 100px;
+	}
+
+
+	h1{
+		font-family: $minionBold;
+		font-size: 120px;
+		margin-bottom: 20px;
+		color: rgba(0,0,0,.8);
+	}
+
+	h2{
+		margin-bottom: 20px;
+	}
+}

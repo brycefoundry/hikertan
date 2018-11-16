@@ -1,0 +1,418 @@
+@import "fonts";
+@import "compass/css3/transform";
+@import "compass/css3";
+
+
+body.single-field_reports{
+	section{
+		padding: 200px 0;
+		background-size: cover;
+		
+
+		&.masthead{
+			padding-bottom: 300px;
+			position: relative;
+
+			.btn{
+				z-index: 90;
+				position: relative;
+			}
+
+			.container{
+				position: relative;
+				z-index: 10;
+			}
+
+			.video{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 0;
+				
+				overflow: hidden;
+
+				video{
+					/* Make video to at least 100% wide and tall */
+					  min-width: 100%; 
+					  min-height: 100%; 
+					  
+					  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+					  width: auto;
+					  height: auto;
+					  
+					  /* Center the video */
+					  position: absolute;
+					  top: 50%;
+					  left: 50%;
+					  transform: translate(-50%,-50%);
+
+
+				}
+
+				&:after{
+					  	position: absolute;
+					  	left: 0;
+					  	top: 0;
+					  	background-color: rgba(0,0,0, .3);
+					  	width: 100%;
+					  	height: 100%;
+					 	display: block;
+					 	content: ""; 	
+					  }
+			}
+		}
+
+		&.masthead, &.callout{
+			color: white;
+			
+
+			h1, p{
+				margin-bottom: 30px;
+			}
+		}
+
+		&.product{
+
+			.weight, .price{
+				font-size: 28px;
+				display: inline-block;
+				font-family: $minionBold;
+				margin-top: 20px;
+			}
+
+			.weight-label, .up-sell-label{
+				font-size: 13px;
+				font-family: $avenirBlack;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				display: block;
+				color: rgba(0,0,0,.5);
+				margin-bottom: 20px;
+			}
+
+			p{
+				margin: 0 0 20px 0;
+			}
+
+			.btn{
+				margin-right: 20px;
+			}
+
+			.float-yes{
+				
+
+				.container{
+				background-color: white;
+				@include box-shadow(0 0 10px rgba(0,0,0,.3));
+				padding: 40px;
+				@include border-radius(4px);	
+				}
+			}
+
+			&.left{
+				.float-yes{
+					@include transform(translateX(-10%)translateY(-10%));
+					z-index: 20;
+				}
+
+				
+
+				&.gallery{
+					.carousel.slide{
+						@include transform(translateX(10%)translateY(10%));
+					}
+				}
+			}
+
+			&.right{
+				.float-yes{
+					@include transform(translateX(10%)translateY(10%));
+					z-index: 20;
+				}
+
+				&.gallery{
+					.carousel.slide{
+						@include transform(translateX(-10%)translateY(-10%));
+					}
+				}
+			}
+		}
+
+		&.collection{
+			padding-bottom: 0px;
+			h3{
+					color: white;
+			}
+			@include transform(translateY(-340px));
+			.product-collection-item{
+				display: inline-block;
+				width: 33%;
+				
+				height: 120px;
+				margin: 40px -4px 40px 0;
+				padding-right: 40px;
+
+
+				
+
+
+
+				h6{
+					padding-left: 140px; 
+					    vertical-align: top;
+					    display: inline-block;
+					    background-color: white;
+					    width: 100%;
+					    @include border-radius(4px);
+					    @include box-shadow(0 0 5px 1px rgba(0,0,0,.3));
+					    padding: 50px 20px 40px 150px;
+					    
+					    min-height: 120px;
+					    background-repeat: no-repeat;
+					    background-size: 100px auto;
+					    background-position: 20px 20px;
+				}
+			}
+
+			@media screen and (max-width: 1230px){
+				.product-collection-item{
+					width: 50%;
+				}		
+			}
+
+			@media screen and (max-width: 830px){
+				.product-collection-item{
+					width: 100%;
+					margin: 10px 0 10px 0;
+					padding: 0;
+
+					&:first-child{
+						margin-top: 40px;
+					}
+					h6{
+
+					}
+				}		
+			}
+
+			.all-price{
+				margin-top: 100px;
+
+
+			}
+
+			.price{
+				font-size: 28px;
+				display: inline-block;
+				font-family: $minionBold;
+				margin-top: 4px;
+			}
+
+			.shipping{
+				font-size: 13px;
+				font-family: $avenirBlack;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				display: block;
+				color: rgba(0,0,0,.5);
+				margin-bottom: 20px;
+			}
+		}
+
+		&.whyyoullloveit {
+			
+			.heading {
+				margin-bottom: 33px;
+				font-size: 20px;
+				  font-weight: 500;
+				  font-style: normal;
+				  font-stretch: normal;
+				  line-height: normal;
+				  letter-spacing: 4px;
+				  color: #30313b;
+			}
+
+			@media screen and (max-width: 575px){
+				.heading {
+					padding-left: 20px;
+				}
+			}
+
+			.whytheyloveit {
+				background-color: #ffffff;
+				//
+
+				.whyyoullboxshadow {
+					@include box-shadow (0 0 14px 0 rgba(0, 0, 0, 0.14));
+					@include border-radius(3px);
+					height: 116px;
+					padding: 10px;
+					margin-right: 20px;
+				}
+
+				.quote {
+					font-family: $minionSemi;
+					font-size: 18px;
+					font-weight: 600;
+					font-style: italic;
+					font-stretch: normal;
+					line-height: 1.28;
+					letter-spacing: normal;
+					color: #30313b;
+					padding-top: 20px;
+				}
+
+				.name {
+					font-family: $avenirBlack;
+					font-size: 12px;
+					font-weight: bold;
+					font-style: normal;
+					font-stretch: normal;
+					text-transform: uppercase;
+					line-height: 1.92;
+					letter-spacing: normal;
+					color: #30313b;
+				}
+
+				.persona {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			
+		}
+
+		&.fieldtesting_items {
+
+			.fieldtesting {
+
+				.heading {
+					margin-bottom: 33px;
+					font-size: 20px;
+					  font-weight: 500;
+					  font-style: normal;
+					  font-stretch: normal;
+					  line-height: normal;
+					  letter-spacing: 4px;
+					  color: #30313b;
+				}
+
+				@media screen and (max-width: 575px){
+					.heading {
+						padding-left: 20px;
+					}
+				}
+
+				.fieldtesting_menu {
+					width: 100%;
+
+					a {
+						padding: 11px 0px 11px 0px;
+						height: 15px;
+						opacity: 0.5;
+						font-family: $avenirMed;
+						font-size: 12px;
+						font-weight: bold;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						color: #30313b;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+
+					@media screen and (max-width: 830px){
+						a {
+							padding: 20px 0px 20px 0px;
+						}	
+					}
+
+					@media screen and (max-width: 575px){
+						.menu_container {
+							padding: 10px 0px 10px 0px;
+							margin-left: 20px;
+						}
+
+						a {
+							padding: 10px 0px 10px 0px;
+						}
+
+						.menu_container {
+							display: inline-block;
+							width: auto;
+						}
+					}
+
+					a:hover, a:focus, a:active {
+						opacity: 1;
+						color: #000;
+						text-decoration: none;
+						border-bottom: 3px solid #ffc623;
+					}
+
+					.focus {
+						opacity: 1;
+						color: #000;
+						text-decoration: none;
+						border-bottom: 3px solid #ffc623;
+					}
+
+				}
+
+				@media screen and (max-width: 575px){
+					.fieldtesting_menu {
+						padding-left: 17px;
+					}
+				}
+
+				.card-area {
+					margin-top: 30px;
+					border: none;
+					@include box-shadow (0 0 14px 0 rgba(0, 0, 0, 0.14));
+					@include border-radius(3px);
+					min-height: 300px;
+					height: 100%;
+
+					.container {
+						padding-right: 0px;
+						padding-left: 0px;
+					}
+
+					.col {
+						// padding: 0px;
+					}
+
+					.textarea {
+						padding: 20px;
+					}
+
+					.card {
+						border: none;
+					}
+
+					.card-body {
+						padding: 0px;
+					}
+
+					p {
+						padding-top: 15px;
+					}
+				}
+
+			}
+		}
+		
+
+	}
+}
+
+
+
+body.post-type-archive-field_reports{
+	h1{
+		margin: 60px 0;
+	}
+}

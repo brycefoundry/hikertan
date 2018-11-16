@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'Minion Pro Semi';
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.svg#MinionPro-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Minion Pro Bold';
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.svg#MinionPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Black';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Roman';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Minion Pro Reg';
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.svg#MinionPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 7, ../sass/kits.scss */
+body.single-kits section, body.page-template-layoutpage-template-kit-detail-php section {
+  padding: 200px 0;
+  background-size: cover;
+}
+/* line 12, ../sass/kits.scss */
+body.single-kits section.masthead, body.page-template-layoutpage-template-kit-detail-php section.masthead {
+  padding-bottom: 300px;
+  position: relative;
+}
+/* line 16, ../sass/kits.scss */
+body.single-kits section.masthead .btn, body.page-template-layoutpage-template-kit-detail-php section.masthead .btn {
+  z-index: 90;
+  position: relative;
+}
+/* line 21, ../sass/kits.scss */
+body.single-kits section.masthead .container, body.page-template-layoutpage-template-kit-detail-php section.masthead .container {
+  position: relative;
+  z-index: 10;
+}
+/* line 26, ../sass/kits.scss */
+body.single-kits section.masthead .video, body.page-template-layoutpage-template-kit-detail-php section.masthead .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+/* line 36, ../sass/kits.scss */
+body.single-kits section.masthead .video video, body.page-template-layoutpage-template-kit-detail-php section.masthead .video video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 54, ../sass/kits.scss */
+body.single-kits section.masthead .video:after, body.page-template-layoutpage-template-kit-detail-php section.masthead .video:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+}
+/* line 67, ../sass/kits.scss */
+body.single-kits section.masthead, body.single-kits section.callout, body.page-template-layoutpage-template-kit-detail-php section.masthead, body.page-template-layoutpage-template-kit-detail-php section.callout {
+  color: white;
+}
+/* line 71, ../sass/kits.scss */
+body.single-kits section.masthead h1, body.single-kits section.masthead p, body.single-kits section.callout h1, body.single-kits section.callout p, body.page-template-layoutpage-template-kit-detail-php section.masthead h1, body.page-template-layoutpage-template-kit-detail-php section.masthead p, body.page-template-layoutpage-template-kit-detail-php section.callout h1, body.page-template-layoutpage-template-kit-detail-php section.callout p {
+  margin-bottom: 30px;
+}
+/* line 78, ../sass/kits.scss */
+body.single-kits section.product .weight, body.single-kits section.product .price, body.page-template-layoutpage-template-kit-detail-php section.product .weight, body.page-template-layoutpage-template-kit-detail-php section.product .price {
+  font-size: 28px;
+  display: inline-block;
+  font-family: "Minion Pro Bold", "Times New Roman", serif;
+  margin-top: 20px;
+}
+/* line 85, ../sass/kits.scss */
+body.single-kits section.product .weight-label, body.single-kits section.product .up-sell-label, body.page-template-layoutpage-template-kit-detail-php section.product .weight-label, body.page-template-layoutpage-template-kit-detail-php section.product .up-sell-label {
+  font-size: 13px;
+  font-family: "Avenir Black", "Helvetica", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+/* line 95, ../sass/kits.scss */
+body.single-kits section.product p, body.page-template-layoutpage-template-kit-detail-php section.product p {
+  margin: 0 0 20px 0;
+}
+/* line 99, ../sass/kits.scss */
+body.single-kits section.product .btn, body.page-template-layoutpage-template-kit-detail-php section.product .btn {
+  margin-right: 20px;
+}
+/* line 106, ../sass/kits.scss */
+body.single-kits section.product .float-yes .container, body.page-template-layoutpage-template-kit-detail-php section.product .float-yes .container {
+  background-color: white;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 115, ../sass/kits.scss */
+body.single-kits section.product.left .float-yes, body.page-template-layoutpage-template-kit-detail-php section.product.left .float-yes {
+  -moz-transform: translateX(-10%) translateY(-10%);
+  -ms-transform: translateX(-10%) translateY(-10%);
+  -webkit-transform: translateX(-10%) translateY(-10%);
+  transform: translateX(-10%) translateY(-10%);
+  z-index: 20;
+}
+/* line 123, ../sass/kits.scss */
+body.single-kits section.product.left.gallery .carousel.slide, body.page-template-layoutpage-template-kit-detail-php section.product.left.gallery .carousel.slide {
+  -moz-transform: translateX(10%) translateY(10%);
+  -ms-transform: translateX(10%) translateY(10%);
+  -webkit-transform: translateX(10%) translateY(10%);
+  transform: translateX(10%) translateY(10%);
+}
+/* line 130, ../sass/kits.scss */
+body.single-kits section.product.right .float-yes, body.page-template-layoutpage-template-kit-detail-php section.product.right .float-yes {
+  -moz-transform: translateX(10%) translateY(10%);
+  -ms-transform: translateX(10%) translateY(10%);
+  -webkit-transform: translateX(10%) translateY(10%);
+  transform: translateX(10%) translateY(10%);
+  z-index: 20;
+}
+/* line 136, ../sass/kits.scss */
+body.single-kits section.product.right.gallery .carousel.slide, body.page-template-layoutpage-template-kit-detail-php section.product.right.gallery .carousel.slide {
+  -moz-transform: translateX(-10%) translateY(-10%);
+  -ms-transform: translateX(-10%) translateY(-10%);
+  -webkit-transform: translateX(-10%) translateY(-10%);
+  transform: translateX(-10%) translateY(-10%);
+}
+/* line 143, ../sass/kits.scss */
+body.single-kits section.collection, body.page-template-layoutpage-template-kit-detail-php section.collection {
+  padding-bottom: 0px;
+  -moz-transform: translateY(-340px);
+  -ms-transform: translateY(-340px);
+  -webkit-transform: translateY(-340px);
+  transform: translateY(-340px);
+}
+/* line 145, ../sass/kits.scss */
+body.single-kits section.collection h3, body.page-template-layoutpage-template-kit-detail-php section.collection h3 {
+  color: white;
+}
+/* line 149, ../sass/kits.scss */
+body.single-kits section.collection .product-collection-item, body.page-template-layoutpage-template-kit-detail-php section.collection .product-collection-item {
+  display: inline-block;
+  width: 33%;
+  height: 120px;
+  margin: 40px -4px 40px 0;
+  padding-right: 40px;
+}
+/* line 162, ../sass/kits.scss */
+body.single-kits section.collection .product-collection-item h6, body.page-template-layoutpage-template-kit-detail-php section.collection .product-collection-item h6 {
+  padding-left: 140px;
+  vertical-align: top;
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 50px 20px 40px 150px;
+  min-height: 120px;
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-position: 20px 20px;
+}
+@media screen and (max-width: 1230px) {
+  /* line 180, ../sass/kits.scss */
+  body.single-kits section.collection .product-collection-item, body.page-template-layoutpage-template-kit-detail-php section.collection .product-collection-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* line 186, ../sass/kits.scss */
+  body.single-kits section.collection .product-collection-item, body.page-template-layoutpage-template-kit-detail-php section.collection .product-collection-item {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 0;
+  }
+  /* line 191, ../sass/kits.scss */
+  body.single-kits section.collection .product-collection-item:first-child, body.page-template-layoutpage-template-kit-detail-php section.collection .product-collection-item:first-child {
+    margin-top: 40px;
+  }
+}
+/* line 200, ../sass/kits.scss */
+body.single-kits section.collection .all-price, body.page-template-layoutpage-template-kit-detail-php section.collection .all-price {
+  margin-top: 100px;
+}
+/* line 206, ../sass/kits.scss */
+body.single-kits section.collection .price, body.page-template-layoutpage-template-kit-detail-php section.collection .price {
+  font-size: 28px;
+  display: inline-block;
+  font-family: "Minion Pro Bold", "Times New Roman", serif;
+  margin-top: 4px;
+}
+/* line 213, ../sass/kits.scss */
+body.single-kits section.collection .shipping, body.page-template-layoutpage-template-kit-detail-php section.collection .shipping {
+  font-size: 13px;
+  font-family: "Avenir Black", "Helvetica", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+/* line 230, ../sass/kits.scss */
+body.post-type-archive-kits h1 {
+  margin: 60px 0;
+}
+
+/* line 239, ../sass/kits.scss */
+.card-module .card {
+  background-repeat: no-repeat;
+}
+/* line 241, ../sass/kits.scss */
+.card-module .card.Beginners {
+  background-size: 770px auto;
+  background-position: -280px 0px;
+}
+/* line 246, ../sass/kits.scss */
+.card-module .card.Couples {
+  background-size: 800px auto;
+  background-position: -110px 0px;
+}

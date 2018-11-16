@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Minion Pro Semi';
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Semibold.svg#MinionPro-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Minion Pro Bold';
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Bold.svg#MinionPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Black';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Medium';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir Roman';
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Minion Pro Reg';
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.eot");
+  src: url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.woff2") format("woff2"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.woff") format("woff"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.ttf") format("truetype"), url("/wp-content/themes/hikertan/assets/fonts/MinionPro-Regular.svg#MinionPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 7, ../sass/frontpage.scss */
+body.home section.hp-masthead {
+  color: white;
+}
+/* line 9, ../sass/frontpage.scss */
+body.home section.hp-masthead .jumbotron {
+  background-size: 1714px auto;
+  background-color: black;
+  background-position: center -200px;
+  background-repeat: no-repeat;
+  height: 800px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  background-image: none;
+}
+/* line 24, ../sass/frontpage.scss */
+body.home section.hp-masthead .container {
+  max-width: 500px;
+  position: relative;
+  z-index: 5;
+  -moz-transform: translateX(-62%) translateY(380px);
+  -ms-transform: translateX(-62%) translateY(380px);
+  -webkit-transform: translateX(-62%) translateY(380px);
+  transform: translateX(-62%) translateY(380px);
+}
+/* line 29, ../sass/frontpage.scss */
+body.home section.hp-masthead .container h1 {
+  display: none;
+}
+/* line 37, ../sass/frontpage.scss */
+body.home section.hp-masthead .container a.btn {
+  margin-top: 20px;
+}
+/* line 42, ../sass/frontpage.scss */
+body.home section.hp-masthead .video-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 49, ../sass/frontpage.scss */
+body.home section.hp-masthead .video-container video {
+  position: absolute;
+  width: 1714px;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: auto;
+  top: -200px;
+  left: 50%;
+  opacity: 1;
+  z-index: 0;
+}
+@media screen and (min-width: 1818px) {
+  /* line 63, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron {
+    background-size: 2554px auto;
+    background-position: center -180px;
+    height: 1310px;
+  }
+  /* line 68, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron .container {
+    -moz-transform: translateX(-115%) translateY(720px);
+    -ms-transform: translateX(-115%) translateY(720px);
+    -webkit-transform: translateX(-115%) translateY(720px);
+    transform: translateX(-115%) translateY(720px);
+  }
+  /* line 74, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container video {
+    width: 2572px;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1218px) {
+  /* line 85, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron {
+    background-size: 1424px auto;
+    background-position: center -80px;
+  }
+  /* line 89, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron .container {
+    -moz-transform: translateX(-43%) translateY(390px);
+    -ms-transform: translateX(-43%) translateY(390px);
+    -webkit-transform: translateX(-43%) translateY(390px);
+    transform: translateX(-43%) translateY(390px);
+  }
+  /* line 94, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 101, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container video {
+    position: absolute;
+    width: 1424px;
+    height: auto;
+    top: -100px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 116, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron {
+    background-size: 964px auto;
+    background-position: center -80px;
+    height: 590px;
+  }
+  /* line 121, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron .container {
+    -moz-transform: translateX(-50%) translateY(230px);
+    -ms-transform: translateX(-50%) translateY(230px);
+    -webkit-transform: translateX(-50%) translateY(230px);
+    transform: translateX(-50%) translateY(230px);
+    max-width: 320px;
+  }
+  /* line 130, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container video {
+    width: 964px;
+    -moz-transform: translateX(-50%) translateY(20px);
+    -ms-transform: translateX(-50%) translateY(20px);
+    -webkit-transform: translateX(-50%) translateY(20px);
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+@media screen and (max-width: 735px) {
+  /* line 139, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron {
+    background-size: 634px auto;
+    background-position: center -80px;
+    height: 410px;
+  }
+  /* line 144, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron .container {
+    -moz-transform: translateX(-18%) translateY(110px);
+    -ms-transform: translateX(-18%) translateY(110px);
+    -webkit-transform: translateX(-18%) translateY(110px);
+    transform: translateX(-18%) translateY(110px);
+    max-width: 320px;
+  }
+  /* line 152, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container video {
+    width: 634px;
+    -moz-transform: translateX(-50%) translateY(20px);
+    -ms-transform: translateX(-50%) translateY(20px);
+    -webkit-transform: translateX(-50%) translateY(20px);
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+@media screen and (max-width: 576px) {
+  /* line 161, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron {
+    background-image: url("/wp-content/themes/hikertan/assets/img/home/epic-cover.png");
+  }
+  /* line 164, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron .container {
+    -moz-transform: translateX(-18%) translateY(140px);
+    -ms-transform: translateX(-18%) translateY(140px);
+    -webkit-transform: translateX(-18%) translateY(140px);
+    transform: translateX(-18%) translateY(140px);
+  }
+  /* line 172, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 180, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron {
+    background-size: 414px auto;
+    background-position: center 20px;
+    height: 550px;
+  }
+  /* line 186, ../sass/frontpage.scss */
+  body.home section.hp-masthead .jumbotron .container {
+    -moz-transform: translateX(-2%) translateY(200px);
+    -ms-transform: translateX(-2%) translateY(200px);
+    -webkit-transform: translateX(-2%) translateY(200px);
+    transform: translateX(-2%) translateY(200px);
+    max-width: 300px;
+  }
+  /* line 196, ../sass/frontpage.scss */
+  body.home section.hp-masthead .video-container video {
+    width: 444px;
+    -moz-transform: translateX(-50%) translateY(60px);
+    -ms-transform: translateX(-50%) translateY(60px);
+    -webkit-transform: translateX(-50%) translateY(60px);
+    transform: translateX(-50%) translateY(60px);
+  }
+}
+/* line 209, ../sass/frontpage.scss */
+body.home section.featured-kits, body.home section.featured-reports {
+  padding: 60px 0;
+}
+@media screen and (max-width: 735px) {
+  /* line 214, ../sass/frontpage.scss */
+  body.home section.featured-kits, body.home section.featured-reports {
+    padding: 20px 0;
+  }
+}
+/* line 219, ../sass/frontpage.scss */
+body.home h3 {
+  margin-bottom: 40px;
+  margin-left: 14px;
+}
+/* line 223, ../sass/frontpage.scss */
+body.home h3.wps-products-price {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+/* line 229, ../sass/frontpage.scss */
+body.home a.btn {
+  font-size: 12px;
+}
+
+/* line 235, ../sass/frontpage.scss */
+.featured-category {
+  padding: 20px;
+}
+/* line 237, ../sass/frontpage.scss */
+.featured-category ul.wps-contain {
+  margin-top: 20px;
+}

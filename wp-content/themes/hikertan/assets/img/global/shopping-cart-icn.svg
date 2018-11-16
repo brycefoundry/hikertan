@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>shopping cart icn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.06,18.4899771 L0.06,17.436888 L1.448,7.717 C1.589,6.732 2.739,6 3.734,6 L4.999,6 L4.999,5 C4.999,2.243 7.243,0 9.999,0 C12.756,0 14.999,2 14.999,5 L14.999,6 L16.57,6 C17.566,6 18.41,6.732 18.55,7.717 L19.979,17.717 C20.151,18.922 19.216,20 17.999,20 L2,20 C1.05303749,20 0.276814292,19.3473157 0.06,18.4899771 Z M16.846,18 C17.455,18 17.922,17.461 17.836,16.859 L16.693,8.859 C16.623,8.366 16.201,8 15.703,8 L14.999,8 L14.999,10 C14.999,10.552 14.552,11 13.999,11 C13.447,11 12.999,10.552 12.999,10 L12.999,8 L6.999,8 L6.999,10 C6.999,10.552 6.552,11 5.999,11 C5.447,11 4.999,10.552 4.999,10 L4.999,8 L4.296,8 C3.798,8 3.376,8.366 3.306,8.859 L2.163,16.859 C2.077,17.461 2.544,18 3.153,18 L16.846,18 Z M6.999,5 L6.999,6 L12.999,6 L12.999,5 C12.999,3 11.654,2 9.999,2 C8.345,2 6.999,3.346 6.999,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigation/Unselected" transform="translate(-1191.000000, -20.000000)">
+            <g id="shopping-cart-icn" transform="translate(1191.000000, 20.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polygon id="Fill-1" fill="#FFC623" mask="url(#mask-2)" points="0.06 20 19.98 20 19.98 -0.04 0.06 -0.04"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
